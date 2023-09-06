@@ -1,6 +1,6 @@
 echo "Enter 1 to view date    | Enter 2 to view time" 
 echo "Enter 3 to view os info | Enter 4 to view load average"   
-
+# taking the input
 read x
 
 # Get the current date and time
