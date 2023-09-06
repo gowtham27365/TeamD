@@ -14,7 +14,9 @@ load_average=$(cat /proc/loadavg)
 
 # Get OS information
 
-os_info=$(cat /etc/os-release)
+#os_info=$(cat /etc/os-release)
+
+os_info2=$(uname -a)
 
 if [ $((x)) == 1 ]; then
     echo current_date:
@@ -31,6 +33,7 @@ elif [ $((x)) == 3 ]; then
     echo "OS Information:"
 
     echo "$os_info"
+    echo "$os_info2"
 
 elif [ $((x)) == 4 ]; then
     echo load_average:
