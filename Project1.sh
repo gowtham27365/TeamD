@@ -3,7 +3,7 @@
 # Prompt the user for a file or directory name
 read -p "Enter a file or directory name: " file_or_dir
 
-# Check if the input exists
+# Check if the input  exists
 if [ ! -e "$file_or_dir" ]; then
   echo "File or directory '$file_or_dir' does not exist."
   exit 1
