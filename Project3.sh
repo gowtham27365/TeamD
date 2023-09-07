@@ -1,6 +1,9 @@
-echo "Enter 1 to view date    | Enter 2 to view time" 
-echo "Enter 3 to view os info | Enter 4 to view load average"   
+echo "Enter 1 to view date"
+echo "Enter 2 to view time" 
+echo "Enter 3 to view os info"
+echo "Enter 4 to view load average"   
 
+echo -e '\n'
 read x
 
 # Get the current date and time
@@ -19,14 +22,10 @@ load_average=$(cat /proc/loadavg)
 os_info2=$(uname -a)
 
 if [ $((x)) == 1 ]; then
-    echo current_date:
-
-    echo $current_date
+    echo current_date: $current_date
 
 elif [ $((x))  == 2 ]; then 
-    echo current_time:
-
-    echo $current_time
+    echo current_time: $current_time
 
 elif [ $((x)) == 3 ]; then 
 
